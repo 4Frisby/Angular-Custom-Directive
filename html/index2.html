@@ -1,0 +1,34 @@
+<!-- REST'den json'ı çeker directive'de saklar ve başarılı bir şekilde çekilmişse ekrana yazdırır -->
+
+<!DOCTYPE html lang="tr-TR">
+<html ng-app="myModule">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/AngularController.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+
+<div ng-controller="dataFetchCTRL">
+<div class="col-xs-6 col-xs-offset-4">
+<label>id no :</label><input type="number" ng-model="idNumber">
+<button class="btn btn-primary" ng-click="fetchData()">Ara</button>	
+</div>
+
+<div show-data-directive ng-if="showTable"></div>
+
+
+
+</div>
+
+
+</body>
+</html>

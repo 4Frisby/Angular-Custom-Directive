@@ -1,0 +1,19 @@
+{
+	"kisiler":[
+		{
+		"ad" : "tarık",
+		"soyad" : "nural",
+		"id" : 1
+		},
+		{
+		"ad" : "ayşe",
+		"soyad" : "blabla",
+		"id" : 2
+		},
+		{
+		"ad" : "fatma",
+		"soyad" : "deneme",
+		"id" : 3
+		}		
+	]
+}

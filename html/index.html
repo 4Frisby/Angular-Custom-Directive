@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myModule" lang="tr-TR">
+
+<head>
+    <style type="text/css">
+        .denemem {
+            background-color: blue;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <script type="text/javascript" src="../angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/AngularController.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/customDirective.js"></script>
+    <script type="text/javascript" src="../js/basicDirective.js"></script>
+</head>
+
+<body>
+
+    <script type="text/ng-template" id="onceIndexeBakar.html">
+        <p>{{indexinicerisi}}</p>
+    </script>
+
+    <div ng-controller="myCTRL">
+
+        <div my-directive3></div>
+        <my-directive3></my-directive3>
+        <!-- directive'i çağırma aynı şekilde yapılır -->
+        <my-directive2></my-directive2>
+        <div my-directive></div>
+
+        <br>
+        <element-directive>Angular JS</element-directive>
+        <br>
+        <span attribute-directive>Attributes</span>
+        <br>
+        <p class="class-directive">Class</p>
+        <br>
+        <div id="comment-directive">Comment Section</div>
+        <!-- directive:commentrestriction -->
+
+        <div my-directive4>
+
+        </div my-directive4>
+
+    </div>
+</body>
+
+</html>
